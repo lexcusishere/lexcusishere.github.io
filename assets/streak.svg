@@ -1,23 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="250" viewBox="0 0 560 250" role="img" aria-label="Contribution streak">
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="250" viewBox="0 0 560 250" role="img" aria-label="Session: current streak 2 days, best 2 days">
   <style>
-    .h { font-family: 'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size: 15px; fill: #E6EDF3; letter-spacing: 1px; }
-    .n { font-family: 'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size: 34px; font-weight: 700; fill: #D4AF37; }
-    .l { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size: 12px; fill: #8B949E; }
-    .s { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size: 11px; fill: #8B949E; }
+    .h { font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size:15px; fill:#E6EDF3; letter-spacing:1px; }
+    .n { font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size:58px; font-weight:700; fill:#E6EDF3; }
+    .cnt { animation: count .7s steps(var(--steps,2),end) .45s both; }
+    .u { font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size:13px; fill:#3FB950; animation: fade .5s ease-out .35s both; }
+    .l { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:11px; fill:#8B949E; letter-spacing:2px; text-transform:uppercase; animation: fade .5s ease-out .4s both; }
+    .c { font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size:12px; fill:#8B949E; animation: fade .5s ease-out 1.6s both; }
+    .w { animation: fade .3s ease-out both; }
+    @keyframes fade { from { opacity:0; } to { opacity:1; } }
+    @keyframes count { from { transform: translateY(var(--d)); } to { transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) { .n,.u,.l,.c,.w,.cnt { animation:none; opacity:1; transform:none; } }
   </style>
-  <rect width="560" height="250" rx="10" fill="#0D1117" stroke="#30363D"/>
-  <text class="h" x="26" y="38">Streak</text>
-  <path d="M26 50 H534" stroke="#30363D"/>
-  <text class="l" x="95" y="96" text-anchor="middle">Current streak</text>
-  <text class="n" x="95" y="146" text-anchor="middle">2</text>
-  <text class="l" x="95" y="170" text-anchor="middle">days</text>
-  <text class="l" x="280" y="96" text-anchor="middle">Longest streak</text>
-  <text class="n" x="280" y="146" text-anchor="middle">2</text>
-  <text class="l" x="280" y="170" text-anchor="middle">days</text>
-  <text class="l" x="465" y="96" text-anchor="middle">This year</text>
-  <text class="n" x="465" y="146" text-anchor="middle">48</text>
-  <text class="l" x="465" y="170" text-anchor="middle">contributions</text>
-  <path d="M26 212 H534" stroke="#30363D"/>
-  <text class="s" x="26" y="234">Counted from the contribution calendar</text>
-  <circle cx="95" cy="186" r="3" fill="#D4AF37"/>
+  <defs>
+    <clipPath id="cs1"><rect x="24" y="82" width="84" height="56"/></clipPath>
+    <clipPath id="cs2"><rect x="320" y="82" width="84" height="56"/></clipPath>
+  </defs>
+  <rect width="560" height="250" rx="10" fill="#0B0F14" stroke="#22303C"/>
+  <text class="h" x="26" y="38">Session</text>
+
+  <g clip-path="url(#cs1)"><g class="cnt" style="--d:-144px; --steps:2">
+    <text class="n" x="26" y="126">02</text>
+    <text class="n" x="26" y="198">01</text>
+    <text class="n" x="26" y="270">00</text>
+  </g></g>
+  <text class="u" x="128" y="122">days</text>
+  <text class="l" x="26" y="152">Current streak</text>
+
+  <path d="M288 56 V150" stroke="#22303C"/>
+
+  <g clip-path="url(#cs2)"><g class="cnt" style="--d:-144px; --steps:2">
+    <text class="n" x="322" y="126">02</text>
+    <text class="n" x="322" y="198">01</text>
+    <text class="n" x="322" y="270">00</text>
+  </g></g>
+  <text class="u" x="424" y="122" style="animation-delay:.5s">days</text>
+  <text class="l" x="322" y="152" style="animation-delay:.55s">Longest streak</text>
+
+  <g>
+    <rect class="w" x="26"  y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.5s"/>
+    <rect class="w" x="46"  y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.53s"/>
+    <rect class="w" x="66"  y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.56s"/>
+    <rect class="w" x="86"  y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.59s"/>
+    <rect class="w" x="106" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.62s"/>
+    <rect class="w" x="126" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.65s"/>
+    <rect class="w" x="146" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.68s"/>
+    <rect class="w" x="166" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.71s"/>
+    <rect class="w" x="186" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.74s"/>
+    <rect class="w" x="206" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.77s"/>
+    <rect class="w" x="226" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.80s"/>
+    <rect class="w" x="246" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.83s"/>
+    <rect class="w" x="266" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.86s"/>
+    <rect class="w" x="286" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.89s"/>
+    <rect class="w" x="306" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.92s"/>
+    <rect class="w" x="326" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.95s"/>
+    <rect class="w" x="346" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:.98s"/>
+    <rect class="w" x="366" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:1.01s"/>
+    <rect class="w" x="386" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:1.04s"/>
+    <rect class="w" x="406" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:1.07s"/>
+    <rect class="w" x="426" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:1.10s"/>
+    <rect class="w" x="446" y="190" width="16" height="16" rx="3" fill="#3FB950" style="animation-delay:1.13s"/>
+    <rect class="w" x="466" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:1.16s"/>
+    <rect class="w" x="486" y="190" width="16" height="16" rx="3" fill="#1B2430" style="animation-delay:1.19s"/>
+    <rect class="w" x="506" y="190" width="16" height="16" rx="3" fill="#3FB950" style="animation-delay:1.22s"/>
+    <rect class="w" x="526" y="190" width="16" height="16" rx="3" fill="#3FB950" style="animation-delay:1.25s"/>
+  </g>
+  <text class="c" x="26" y="228">last 26 weeks</text>
+  <text class="c" x="534" y="228" text-anchor="end" fill="#3FB950">2 day streak &#183; best 2</text>
 </svg>
