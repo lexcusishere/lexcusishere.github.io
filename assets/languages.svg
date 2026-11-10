@@ -1,7 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="250" viewBox="0 0 560 250" role="img" aria-label="Public repositories by primary language">
-  <rect width="560" height="250" rx="10" fill="#0D1117" stroke="#30363D"/>
-  <text x="26" y="38" style="font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace;font-size:15px;fill:#E6EDF3;letter-spacing:1px">Languages</text>
-  <path d="M26 50 H534" stroke="#30363D"/>
-    <text x="26" y="84" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:13px;fill:#E6EDF3">HTML</text>  <rect x="150" y="74" width="330" height="9" rx="4" fill="#30363D"/>  <rect x="150" y="74" width="165" height="9" rx="4" fill="#D4AF37"/>  <text x="534" y="84" text-anchor="end" style="font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace;font-size:12px;fill:#8B949E">1</text>  <text x="26" y="114" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:13px;fill:#E6EDF3">Python</text>  <rect x="150" y="104" width="330" height="9" rx="4" fill="#30363D"/>  <rect x="150" y="104" width="165" height="9" rx="4" fill="#D4AF37"/>  <text x="534" y="114" text-anchor="end" style="font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace;font-size:12px;fill:#8B949E">1</text>
-  <text x="26" y="236" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:11px;fill:#8B949E">Own public repositories, by primary language</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="250" viewBox="0 0 560 250" role="img" aria-label="Languages: HTML, Python, Pawn, one repository each">
+  <style>
+    .h { font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size:15px; fill:#E6EDF3; letter-spacing:1px; }
+    .l { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:14px; fill:#E6EDF3; }
+    .c { font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size:12px; fill:#8B949E; animation: fade .5s ease-out 1.4s both; }
+    .leg { animation: fade .4s ease-out both; }
+    .s1 { animation: draw1 .9s cubic-bezier(.22,1,.36,1) .2s both; }
+    .s2 { animation: draw2 .9s cubic-bezier(.22,1,.36,1) .5s both; }
+    .s3 { animation: draw3 .9s cubic-bezier(.22,1,.36,1) .8s both; }
+    @keyframes fade { from { opacity:0; } to { opacity:1; } }
+    @keyframes draw1 { from { stroke-dasharray:0 389.25; } to { stroke-dasharray:129.75 259.5; } }
+    @keyframes draw2 { from { stroke-dasharray:0 389.25; } to { stroke-dasharray:129.75 259.5; } }
+    @keyframes draw3 { from { stroke-dasharray:0 389.25; } to { stroke-dasharray:129.75 259.5; } }
+    @media (prefers-reduced-motion: reduce) { .s1,.s2,.s3,.leg,.c { animation:none; opacity:1; stroke-dasharray:129.75 259.5; } }
+  </style>
+  <rect width="560" height="250" rx="10" fill="#0B0F14" stroke="#22303C"/>
+  <text class="h" x="26" y="38">Languages</text>
+
+  <g transform="rotate(-90 150 148)">
+    <circle class="s1" cx="150" cy="148" r="62" fill="none" stroke="#3FB950" stroke-width="24"
+            stroke-dasharray="129.75 259.5" stroke-dashoffset="0"/>
+    <circle class="s2" cx="150" cy="148" r="62" fill="none" stroke="#2EA043" stroke-opacity=".65" stroke-width="24"
+            stroke-dasharray="129.75 259.5" stroke-dashoffset="-129.75"/>
+    <circle class="s3" cx="150" cy="148" r="62" fill="none" stroke="#1A7F37" stroke-opacity=".45" stroke-width="24"
+            stroke-dasharray="129.75 259.5" stroke-dashoffset="-259.5"/>
+  </g>
+
+  <g transform="translate(300,96)">
+    <g class="leg" style="animation-delay:.9s">
+      <rect x="0"  y="0"  width="12" height="12" rx="3" fill="#3FB950"/>
+      <text class="l" x="24" y="11">HTML</text>
+      <text class="c" x="234" y="11" text-anchor="end" style="animation-delay:.9s">1</text>
+    </g>
+    <g class="leg" style="animation-delay:1.1s">
+      <rect x="0"  y="34" width="12" height="12" rx="3" fill="#2EA043" opacity=".65"/>
+      <text class="l" x="24" y="45">Python</text>
+      <text class="c" x="234" y="45" text-anchor="end" style="animation-delay:1.1s">1</text>
+    </g>
+    <g class="leg" style="animation-delay:1.3s">
+      <rect x="0"  y="68" width="12" height="12" rx="3" fill="#1A7F37" opacity=".45"/>
+      <text class="l" x="24" y="79">Pawn</text>
+      <text class="c" x="234" y="79" text-anchor="end" style="animation-delay:1.3s">1</text>
+    </g>
+  </g>
+
+  <text class="c" x="26" y="228">by repository</text>
+  <text class="c" x="534" y="228" text-anchor="end">3 tracked repos</text>
 </svg>
