@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="220" viewBox="0 0 1100 220" role="img" aria-label="lexcus, automation and systems">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/><stop offset="55%" stop-color="#161B22"/><stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#D4AF37" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#F0C75E" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .title { font-family: 'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size: 62px; font-weight: 700; fill: #D4AF37; letter-spacing: 2px; }
+      .sub { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size: 16px; fill: #8B949E; letter-spacing: 3px; text-transform: uppercase; }
+      .draw { stroke-dasharray: 1100; stroke-dashoffset: 0; animation: sweep 2.4s ease-out .25s both; }
+      .rise { opacity: 1; }
+      .pulse { animation: glow 4.5s ease-in-out 1.6s infinite; }
+      @keyframes sweep { from { stroke-dashoffset: 1100; } to { stroke-dashoffset: 0; } }
+      @keyframes rise { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes glow { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+      @media (prefers-reduced-motion: reduce) { .rise, .draw, .pulse { animation: none; opacity: 1; stroke-dashoffset: 0; } }
+    </style>
+  </defs>
+  <rect width="1100" height="220" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1100" height="1" fill="url(#line)" opacity=".35"/>
+  <g transform="translate(64,104)">
+    <text class="title" x="0" y="0">lexcus</text>
+  </g>
+  <g transform="translate(68,146)">
+    <text class="sub" x="0" y="0">Automation · Systems · Tooling</text>
+  </g>
+  <g class="pulse">
+    <circle cx="64" cy="176" r="3.5" fill="#D4AF37"/>
+    <text x="78" y="181" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:13px;fill:#E6EDF3">Open source contributor</text>
+  </g>
+  <path d="M64 190 H1036" stroke="url(#line)" stroke-width="1.5" fill="none" class="draw"/>
+</svg>
