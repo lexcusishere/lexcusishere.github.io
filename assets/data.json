@@ -1,10 +1,10 @@
 {
   "name": "lexcus",
-  "repos": 5,
+  "repos": 3,
   "stars": 0,
   "followers": 0,
-  "commits": 36,
-  "prs": 3,
+  "commits": 34,
+  "prs": 5,
   "merged": 0,
   "issues": 0,
   "year": 48,
@@ -18,11 +18,7 @@
     [
       "Python",
       1
-    ],
-    [
-      "Pawn",
-      1
     ]
   ],
-  "updated": "2026-11-10 12:20 UTC"
+  "updated": "2026-11-10 18:20 UTC"
 }
