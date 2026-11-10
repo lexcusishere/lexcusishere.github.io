@@ -1,24 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="250" viewBox="0 0 560 250" role="img" aria-label="GitHub statistics">
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="250" viewBox="0 0 560 250" role="img" aria-label="GitHub metrics: 36 commits, 3 pull requests, 5 repositories, 48 contributions">
+  <defs>
+    <clipPath id="cw1"><rect x="44" y="94" width="90" height="40"/></clipPath>
+    <clipPath id="cw2"><rect x="306" y="94" width="90" height="40"/></clipPath>
+    <clipPath id="cw3"><rect x="44" y="190" width="90" height="40"/></clipPath>
+    <clipPath id="cw4"><rect x="306" y="190" width="90" height="40"/></clipPath>
+  </defs>
   <style>
-    .k { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size: 13px; fill: #8B949E; }
-    .v { font-family: 'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size: 19px; font-weight: 700; fill: #D4AF37; }
-    .h { font-family: 'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size: 15px; fill: #E6EDF3; letter-spacing: 1px; }
-    .f { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size: 11px; fill: #8B949E; }
+    .h { font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size:15px; fill:#E6EDF3; letter-spacing:1px; }
+    .n { font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size:36px; font-weight:700; fill:#E6EDF3; }
+    .l { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:11px; fill:#8B949E; letter-spacing:2px; text-transform:uppercase; }
+    .dot { font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace; font-size:12px; fill:#3FB950; animation: glow 3.5s ease-in-out infinite; }
+    .cell { animation: cell .55s cubic-bezier(.22,1,.36,1) both; }
+    .accent { transform-box: fill-box; transform-origin: top; animation: grow .5s cubic-bezier(.22,1,.36,1) both; }
+    .cnt { animation: count .9s steps(var(--steps,6),end) .55s both; }
+    @keyframes count { from { transform: translateY(var(--d)); } to { transform: translateY(0); } }
+    @keyframes cell { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes grow { from { transform:scaleY(0); } to { transform:scaleY(1); } }
+    @keyframes glow { 0%,100% { opacity:.55; } 50% { opacity:1; } }
+    @media (prefers-reduced-motion: reduce) { .cell,.accent,.dot,.cnt { animation:none; opacity:1; transform:none; } }
   </style>
-  <rect width="560" height="250" rx="10" fill="#0D1117" stroke="#30363D"/>
-  <text class="h" x="26" y="38">GitHub stats</text>
-  <path d="M26 50 H534" stroke="#30363D"/>
-  <text class="k" x="26" y="82">Commits</text>
-  <text class="v" x="26" y="104">34</text>
-  <text class="k" x="300" y="82">Pull requests</text>
-  <text class="v" x="300" y="104">5</text>
-  <text class="k" x="26" y="116">Issues</text>
-  <text class="v" x="26" y="138">0</text>
-  <text class="k" x="300" y="116">Repositories</text>
-  <text class="v" x="300" y="138">3</text>
-  <text class="k" x="26" y="150">Stars earned</text>
-  <text class="v" x="26" y="172">0</text>
-  <text class="k" x="300" y="150">Contributions</text>
-  <text class="v" x="300" y="172">48</text>
-  <text class="f" x="26" y="236">Updated 2026-11-10 18:20 UTC</text>
+  <rect width="560" height="250" rx="10" fill="#0B0F14" stroke="#22303C"/>
+  <text class="h" x="26" y="38">Metrics</text>
+  <text class="dot" x="534" y="38" text-anchor="end">&#9679; live</text>
+
+  <g class="cell" style="animation-delay:.15s">
+    <rect x="26"  y="56"  width="246" height="84" rx="8" fill="#10161D" stroke="#22303C"/>
+    <rect class="accent" x="26"  y="56"  width="3"   height="84" rx="1.5" fill="#3FB950" style="animation-delay:.3s"/>
+    <text class="l" x="46" y="80">Commits</text>
+    <g clip-path="url(#cw1)"><g class="cnt" style="--d:-264px; --steps:6">
+      <text class="n" x="46" y="122">36</text>
+      <text class="n" x="46" y="166">31</text>
+      <text class="n" x="46" y="210">25</text>
+      <text class="n" x="46" y="254">18</text>
+      <text class="n" x="46" y="298">12</text>
+      <text class="n" x="46" y="342">6</text>
+      <text class="n" x="46" y="386">0</text>
+    </g></g>
+  </g>
+
+  <g class="cell" style="animation-delay:.3s">
+    <rect x="288" y="56"  width="246" height="84" rx="8" fill="#10161D" stroke="#22303C"/>
+    <rect class="accent" x="288" y="56"  width="3"   height="84" rx="1.5" fill="#3FB950" style="animation-delay:.45s"/>
+    <text class="l" x="308" y="80">Pull requests</text>
+    <g clip-path="url(#cw2)"><g class="cnt" style="--d:-132px; --steps:3">
+      <text class="n" x="308" y="122">3</text>
+      <text class="n" x="308" y="166">2</text>
+      <text class="n" x="308" y="210">1</text>
+      <text class="n" x="308" y="254">0</text>
+    </g></g>
+  </g>
+
+  <g class="cell" style="animation-delay:.45s">
+    <rect x="26"  y="152" width="246" height="84" rx="8" fill="#10161D" stroke="#22303C"/>
+    <rect class="accent" x="26"  y="152" width="3"   height="84" rx="1.5" fill="#2EA043" style="animation-delay:.6s"/>
+    <text class="l" x="46" y="176">Repositories</text>
+    <g clip-path="url(#cw3)"><g class="cnt" style="--d:-220px; --steps:5">
+      <text class="n" x="46" y="218">5</text>
+      <text class="n" x="46" y="262">4</text>
+      <text class="n" x="46" y="306">3</text>
+      <text class="n" x="46" y="350">2</text>
+      <text class="n" x="46" y="394">1</text>
+      <text class="n" x="46" y="438">0</text>
+    </g></g>
+  </g>
+
+  <g class="cell" style="animation-delay:.6s">
+    <rect x="288" y="152" width="246" height="84" rx="8" fill="#10161D" stroke="#22303C"/>
+    <rect class="accent" x="288" y="152" width="3"   height="84" rx="1.5" fill="#2EA043" style="animation-delay:.75s"/>
+    <text class="l" x="308" y="176">Contributions</text>
+    <g clip-path="url(#cw4)"><g class="cnt" style="--d:-308px; --steps:7">
+      <text class="n" x="308" y="218">48</text>
+      <text class="n" x="308" y="262">42</text>
+      <text class="n" x="308" y="306">35</text>
+      <text class="n" x="308" y="350">28</text>
+      <text class="n" x="308" y="394">21</text>
+      <text class="n" x="308" y="438">14</text>
+      <text class="n" x="308" y="482">7</text>
+      <text class="n" x="308" y="526">0</text>
+    </g></g>
+  </g>
 </svg>
